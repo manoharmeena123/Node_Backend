@@ -55,7 +55,7 @@ const getAllBillOfPicker = async (req, res) => {
                 },
             },
 
-            
+
             // {
             //     $project: {
             //         _id: 1,
@@ -71,6 +71,7 @@ const getAllBillOfPicker = async (req, res) => {
             //         },
             //     },
             // },
+            
         ];
         const billings = await Billing.aggregate(pipeline);
         createResponse(res, 200, "All bills fetched successfully", billings);
