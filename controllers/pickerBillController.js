@@ -24,6 +24,8 @@ const getAllBillOfPicker = async (req, res) => {
             // delete query.status;
         }
 
+        
+
         // if (req.query.reassignVerification) {
         //     query["verifier.reassign"] = "Yes";
         //     delete query.reassignVerification;
