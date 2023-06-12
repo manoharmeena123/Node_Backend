@@ -1,0 +1,23 @@
+service: "manoj-gupta"
+
+provider:
+    name: aws
+    runtime: nodejs18.x
+    stage: dev
+    region: ap-south-1
+    apiGateway:
+        binaryMediaTypes:
+            - "multipart/form-data"
+functions:
+    app:
+        handler: server.handler
+        name: manoj-gupta
+        events:
+            - http:
+                  path: /
+                  method: ANY
+                  cors: true
+            - http:
+                  path: /{proxy+}
+                  method: ANY
+                  cors: true
