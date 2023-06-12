@@ -24,12 +24,13 @@ const getAllBillOfPicker = async (req, res) => {
             // delete query.status;
         }
 
-        
+
 
         // if (req.query.reassignVerification) {
         //     query["verifier.reassign"] = "Yes";
         //     delete query.reassignVerification;
         // }
+
 
         if (req.query.acceptanceStatus) {
             query["picker.acceptanceStatus"] = req.query.acceptanceStatus;
@@ -53,6 +54,8 @@ const getAllBillOfPicker = async (req, res) => {
                     as: "billItems",
                 },
             },
+
+            
             // {
             //     $project: {
             //         _id: 1,
