@@ -9,6 +9,8 @@ const { authJwt } = require("../middleware");
 // Get all picker bills
 router.get("/picker-bills", getAllBillOfPicker);
 router.put("/assign-bill/verifier/:id", assignBillToVerifier);
+
+
 // Create a new picker bill
 // router.post("/picker-bills", [authJwt.isAdmin], createPickerBill);
 // router.put("/picker-bills/assign-bill/:id", assignBillToVerifier);
