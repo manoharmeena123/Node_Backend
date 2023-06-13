@@ -14,6 +14,7 @@ router.put("/assign-bill/verifier/:id", assignBillToVerifier);
 // router.put("/picker-bills/assign-bill/:id", assignBillToVerifier);
 // Update a picker bill
 router.put("/picker-bills/:id", updateBillingPicker);
+
 // router.get("/picker-bills/:id", getPickerBill);
 // // Delete a picker bill
 // router.delete("/picker-bills/:id", deletePickerBill);
