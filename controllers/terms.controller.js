@@ -52,6 +52,7 @@ exports.createTerm = async (req, res, next) => {
     }
 };
 
+
 // UPDATE a terms and conditions by ID
 exports.updateTerm = async (req, res, next) => {
     try {
