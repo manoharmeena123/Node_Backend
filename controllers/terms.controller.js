@@ -93,4 +93,7 @@ exports.deleteTerm = async (req, res, next) => {
         }
         next(httpError(500, err));
     }
+    
 };
+
+
